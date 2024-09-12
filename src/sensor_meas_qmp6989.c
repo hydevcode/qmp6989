@@ -21,7 +21,7 @@ static qmp6989_device_t _qmp6989_init(struct rt_sensor_intf *intf)
     return RT_NULL;
 }
 
-static rt_size_t _qmp6989_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
+static RT_SIZE_TYPE _qmp6989_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
 {
     qmp6989_device_t qmp6989 = (qmp6989_device_t)sensor->parent.user_data;
     struct rt_sensor_data *data = (struct rt_sensor_data *)buf;
