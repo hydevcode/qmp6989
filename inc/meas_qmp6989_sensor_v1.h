@@ -1,5 +1,5 @@
-#ifndef __SENSOR_MEAS_QMP6989_H__
-#define __SENSOR_MEAS_QMP6989_H__
+#ifndef __MEAS_QMP6989_SENSOR_V1_H__
+#define __MEAS_QMP6989_SENSOR_V1_H__
 
 #include <stdint.h>
 #include <rtdef.h>
@@ -18,4 +18,4 @@
 int rt_hw_qmp6989_init(const char *name, struct rt_sensor_config *cfg);
 
 
-#endif /* __SENSOR_MEAS_QMP6989_H__ */
+#endif /* __MEAS_QMP6989_SENSOR_V1_H__ */

@@ -9,10 +9,10 @@ src   = []
 src += ['src/qmp6989.c']
 
 if GetDepend('PKG_QMP6989_USING_SENSOR_V1'):
-    src += ['src/sensor_meas_qmp6989.c']
+    src += ['src/meas_qmp6989_sensor_v1.c']
 
 if GetDepend('PKG_QMP6989_SENSOR_V1_DEMO'):
-    src += ['demo/qmp6989_sample.c']
+    src += ['demo/qmp6989_sensor_v1_sample.c']
 
 # add ms5805 include path.
 path  = [cwd + '/inc']
